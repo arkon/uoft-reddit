@@ -429,10 +429,14 @@ button:active,
 }
 
 .stickied {
-    background: #f9e8c6;
+    background: #D9F0D1;
     border: 1px solid #f2bd52;
     border-radius: 4px;
     margin-bottom: 1rem;
+}
+
+.stickied .title {
+    color:red!important;
 }
 
 .comments-page .stickied {
@@ -501,6 +505,46 @@ button:active,
     max-width: none;
 }
 
+html[lang="hh"] .listing-page .thing.linkflair-humour {
+  display: none;
+}
+
+html[lang="hf"] .listing-page .thing.linkflair-freespeech {
+  display: none;
+}
+
+html[lang="ad"] .listing-page .thing.linkflair-admissions {
+  display: none;
+}
+
+html[lang="hu"] .listing-page .thing.linkflair-utsu {
+  display: none;
+}
+
+html[lang="ho"] .listing-page .thing.linkflair-other {
+  display: none;
+}
+
+html[lang="hd"] .listing-page .thing.linkflair-discussion {
+  display: none;
+}
+
+html[lang="ac"] .listing-page .thing.linkflair-academics {
+  display: none;
+}
+
+html[lang="hc"] .listing-page .thing.linkflair-courses {
+  display: none;
+}
+
+html[lang="hs"] .listing-page .thing.linkflair-serious {
+  display: none;
+}
+
+html[lang="hj"] .listing-page .thing.linkflair-jobs {
+  display: none;
+}
+
 .flair-green  { color: green; }
 .flair-red    { color: red; }
 .flair-orange { color: orange; }
@@ -512,8 +556,69 @@ button:active,
 .flair-cyan   { color: cyan; }
 .flair-brown  { color: brown; }
 .flair-blue   { color: blue; }
-.flair-utsu   { color: black; background-color: #00b7eb; }
 
+.linkflair-humour .linkflairlabel {
+    background: #FCFF33;
+    color: black;
+    border-color: #black;
+}
+
+.linkflair-serious .linkflairlabel {
+
+    background: #33ccff;
+    color: white;
+    border-color: #33ccff;
+}
+
+.linkflair-admissions .linkflairlabel {
+    background: #3FFF33;
+    color: white;
+    border-color: #3FFF33;
+}
+
+.linkflair-freespeech .linkflairlabel {
+    background: #3352FF;
+    color: white;
+    border-color: #3352FF;
+}
+
+.linkflair-utsu .linkflairlabel {
+    background: #E933FF;
+    color: white;
+    border-color: #E933FF;
+}
+
+.linkflair-other .linkflairlabel {
+    background: #33FFEC;
+    color: black;
+    border-color: #33FFEC;
+}
+
+.linkflair-discussion .linkflairlabel {
+    background: #D6686F;
+    color: white;
+    border-color: #D6686F;
+}
+
+.linkflair-academics .linkflairlabel {
+    background: #E8CE9E;
+    color: white;
+    border-color: #E8CE9E;
+}
+
+.linkflair-courses .linkflairlabel {
+    background: #C6EDC3;
+    color: black;
+    border-color: #C6EDC3;
+}
+
+.linkflair-jobs .linkflairlabel {
+    background: #F4A17D;
+    color: white;
+    border-color: #F4A17D;
+}
+
+.stickied .midcol { visibility: hidden; }
 
 /* SUBMIT =========================================================== */
 
