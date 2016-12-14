@@ -9,22 +9,24 @@
 }
 
 body {
-    background: #e5e5e5;
+    background: #ebdeda;
     font: 400 14px/1.4 'Helvetica Neue', 'Helvetica', 'Open Sans', 'Arial', sans-serif;
+    height: 100%;
 }
 
 body::before {
-    background: transparent url(%%uoftsnootransparent%%) no-repeat center center;
-    content: '';
+    content: 'ANYTHING TO DRINK FOR YOU?';
     display: block;
-    height: 100%;
-    left: 0;
-    opacity: 0.5;
-    overflow: hidden;
+    left: 50%;
     position: fixed;
-    top: 0;
-    width: 100%;
+    top: 50%;
     z-index: -1;
+    font-style: italic;
+    color: #c9bdbb;
+    font-size: 2em;
+    max-width: 5em;
+    font-family: 'Times New Roman', 'Times', serif;
+    transform: translate(-50%, -50%);
 }
 
 input,
@@ -39,39 +41,41 @@ textarea {
     -webkit-appearance: none !important;
     background: #fff !important;
     border: 1px solid #ccc !important;
-    border-radius: 4px;
+    border-radius: 2px;
     box-shadow: none !important;
     padding: 0.5rem !important;
 }
 
 a {
-    color: #013a6f;
+    color: #de6080;
     transition: color 0.2s;
 }
 
 a:hover {
-    color: #012c54;
+    color: #ff85a3;
 }
 
 .rounded {
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 
 /* HEADER =========================================================== */
 
 #header {
-    background: #013a6f;
-    border: none;
-    color: #fff;
+    background: #ebdeda;
+    border-bottom: 5px solid #6d3322;
+    color: #6d3322;
+    height: 7em;
+    margin-bottom: 2em;
 }
 
 #header a {
-    color: #fff;
+    color: #6d3322;
 }
 
 #sr-header-area {
-    background: #012c54;
+    background: #3b1916;
     border: none;
     font-size: 0.6rem;
     height: auto;
@@ -105,7 +109,7 @@ a:hover {
 }
 
 .drop-choices {
-    background: #333;
+    background: #6d3322;
     border: none;
     text-transform: none;
 }
@@ -125,7 +129,7 @@ a:hover {
 }
 
 #sr-more-link {
-    background-color: #012c54;
+    background-color: #3b1916;
     padding: 0.5em 1em;
 }
 
@@ -135,33 +139,50 @@ a:hover {
 }
 
 #header-img.default-header {
-    background: transparent url(%%uoftsnoo%%) no-repeat center center / contain;
-    height: 4em;
-    margin: 0.5em;
+    background: transparent url(%%browntruck%%) no-repeat center center / contain;
+    height: 6em;
     vertical-align: middle;
-    width: 4em;
+    width: 8em;
+    float: left;
+    margin-left: -1em;
+    margin-top: -0.5em;
+    transition: transform 0.3s;
+}
+
+#header-img.default-header:hover {
+    transform: rotate(-20deg);
 }
 
 .pagename {
-    border-left: 1px solid #ccd7e2;
     font-variant: normal;
     font-weight: 300;
+    margin-top: 3em;
     padding: 0.5em 0 0.5em 0.75em;
-    vertical-align: middle;
+    position: relative;
+    white-space: nowrap;
 }
 
 .pagename a {
-    font-weight: 700;
+    width: 10.5em;
+    display: inline-block;
+    opacity: 0;
+    margin-top: 0.65em;
 }
 
 .pagename::before {
-    color: #ccd7e2;
-    content: 'r/';
+    color: #de6080;
+    content: 'r/IDEAL CATERING';
+    font-family: 'Times New Roman', 'Times', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0 #fff, 0 2px 0 #f3bc96, 0 3px 0 #f3bc96, 0 4px 0 #f3bc96;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.75em;
 }
 
 .tabmenu {
-    margin-left: 1em;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .tabmenu li a {
@@ -173,16 +194,20 @@ a:hover {
 }
 
 .tabmenu li a:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #6d3322;
     opacity: 1;
 }
 
 .tabmenu li.selected a {
     background: transparent;
     border: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #6d3322;
     font-weight: 700;
     opacity: 1;
+}
+
+#header-bottom-left {
+    margin-top: 0.5em;
 }
 
 #header-bottom-right {
@@ -212,6 +237,10 @@ a:hover {
     padding-top: 0;
 }
 
+.footer {
+    border: none;
+}
+
 .debuginfo {
     display: none;
 }
@@ -235,11 +264,11 @@ a:hover {
 }
 
 .users-online .number::after {
-    content: ' students currently procrastinating';
+    content: ' students eating poutine';
 }
 
 .subscribers .number::after {
-    content: ' people who literally live in Robarts';
+    content: ' food truck connoisseurs';
 }
 
 .side,
@@ -249,39 +278,39 @@ a:hover {
 }
 
 .titlebox {
-    border-radius: 4px;
+    border-radius: 2px;
     font-size: 0.85em;
     padding: 0.5em;
 }
 
 .titlebox::before {
-    border-radius: 4px 4px 0 0;
-    content: 'r/UofT';
+    border-radius: 2px 2px 0 0;
+    content: 'Toronto Supreme Fries';
     display: block;
     margin: -0.4rem -0.4rem 0 -0.4rem;
 }
 
 .titlebox h1.redditname a {
-    background: transparent url(%%uoft%%) no-repeat center center / contain;
+    background: transparent url(%%menu%%) no-repeat center center / contain;
     content: '';
     display: block;
     font-size: 0;
-    height: 7rem;
+    height: 20rem;
     margin: 1.5rem 0;
 }
 
 .titlebox::before,
 .sidecontentbox .title {
-    background: #013a6f;
+    background: #ded7bd;
     display: block;
     padding: 0.5rem;
 }
 
 .titlebox::before,
 .sidecontentbox .title h1 {
-    color: #fff;
+    color: #cc2121;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .sidecontentbox a.helplink {
@@ -295,24 +324,28 @@ a:hover {
 .titlebox,
 .sidecontentbox .content {
     background: #fff;
-    border: none;
+    border: 2px solid #a9b3bb;
     font-size: 0.85em;
     width: 100%;
 }
 
 .sidecontentbox .title {
-    border-radius: 4px 4px 0 0;
+    border-radius: 2px 2px 0 0;
+    border: 2px solid #a9b3bb;
+    border-bottom: none;
 }
 
 .sidecontentbox .content {
-    border-radius: 0 0 4px 4px;
+    border: 2px solid #a9b3bb;
+    border-top: none;
+    border-radius: 0 0 2px 2px;
 }
 
 button,
 .morelink {
-    background: #38a7c0;
+    background: #6d3322;
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
     color: #fff;
     font-size: 1rem;
     font-weight: 400;
@@ -325,8 +358,8 @@ button,
 
 button:hover,
 .morelink:hover {
-    background: #38a7c0;
-    box-shadow: 0 0.15em 0 #3291a7;
+    background: #6d3322;
+    box-shadow: 0 0.15em 0 #90432c;
     transform: translateY(-0.15em);
 }
 
@@ -375,7 +408,7 @@ button:active,
 
 #siteTable {
     background: #fff;
-    border-radius: 4px;
+    border-radius: 2px;
     padding: 0.5em;
 }
 
@@ -384,13 +417,13 @@ button:active,
 }
 
 .thing .title {
-    color: #013a6f;
+    color: #de6080;
     font-weight: 700;
 }
 
 .thing .title:visited,
 .thing.visited .title {
-    color: #5f7fa2;
+    color: #d26e86;
 }
 
 .link {
@@ -417,6 +450,10 @@ button:active,
     margin: 0.25rem 0;
 }
 
+.tagline a {
+    color: #de6080;
+}
+
 .comments-page .link .entry {
     border: none;
     padding: 0;
@@ -425,18 +462,18 @@ button:active,
 .link.last-clicked {
     background: #f3f3f3;
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 .stickied {
-    background: #D9F0D1;
-    border: 1px solid #f2bd52;
-    border-radius: 4px;
+    background: #ded7bc;
+    border: 1px solid #de6080;
+    border-radius: 2px;
     margin-bottom: 1rem;
 }
 
 .stickied .title {
-    color:red!important;
+    color: red !important;
 }
 
 .comments-page .stickied {
@@ -454,7 +491,7 @@ button:active,
 
 .link .usertext-body .md {
     border-color: #ccc;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 .arrow {
@@ -506,56 +543,88 @@ button:active,
 }
 
 html[lang="hh"] .listing-page .thing.linkflair-humour {
-  display: none;
+    display: none;
 }
 
 html[lang="hf"] .listing-page .thing.linkflair-freespeech {
-  display: none;
+    display: none;
 }
 
 html[lang="ad"] .listing-page .thing.linkflair-admissions {
-  display: none;
+    display: none;
 }
 
 html[lang="hu"] .listing-page .thing.linkflair-utsu {
-  display: none;
+    display: none;
 }
 
 html[lang="ho"] .listing-page .thing.linkflair-other {
-  display: none;
+    display: none;
 }
 
 html[lang="hd"] .listing-page .thing.linkflair-discussion {
-  display: none;
+    display: none;
 }
 
 html[lang="ac"] .listing-page .thing.linkflair-academics {
-  display: none;
+    display: none;
 }
 
 html[lang="hc"] .listing-page .thing.linkflair-courses {
-  display: none;
+    display: none;
 }
 
 html[lang="hs"] .listing-page .thing.linkflair-serious {
-  display: none;
+    display: none;
 }
 
 html[lang="hj"] .listing-page .thing.linkflair-jobs {
-  display: none;
+    display: none;
 }
 
-.flair-green  { color: green; }
-.flair-red    { color: red; }
-.flair-orange { color: orange; }
-.flair-yellow { color:  yellow; }
-.flair-purple { color: purple; }
-.flair-navy   { color: navy; }
-.flair-black  { color: black; }
-.flair-pink   { color: pink; }
-.flair-cyan   { color: cyan; }
-.flair-brown  { color: brown; }
-.flair-blue   { color: blue; }
+.flair-green {
+    color: green;
+}
+
+.flair-red {
+    color: red;
+}
+
+.flair-orange {
+    color: orange;
+}
+
+.flair-yellow {
+    color: yellow;
+}
+
+.flair-purple {
+    color: purple;
+}
+
+.flair-navy {
+    color: navy;
+}
+
+.flair-black {
+    color: black;
+}
+
+.flair-pink {
+    color: pink;
+}
+
+.flair-cyan {
+    color: cyan;
+}
+
+.flair-brown {
+    color: brown;
+}
+
+.flair-blue {
+    color: blue;
+}
 
 .linkflair-humour .linkflairlabel {
     background: #FCFF33;
@@ -564,7 +633,6 @@ html[lang="hj"] .listing-page .thing.linkflair-jobs {
 }
 
 .linkflair-serious .linkflairlabel {
-
     background: #33ccff;
     color: white;
     border-color: #33ccff;
@@ -618,7 +686,10 @@ html[lang="hj"] .listing-page .thing.linkflair-jobs {
     border-color: #F4A17D;
 }
 
-.stickied .midcol { visibility: hidden; }
+.stickied .midcol {
+    visibility: hidden;
+}
+
 
 /* SUBMIT =========================================================== */
 
@@ -633,5 +704,5 @@ html[lang="hj"] .listing-page .thing.linkflair-jobs {
 .res #baconBit {
     background: url(%%uoftdark%%);
     height: 100px;
-    width:  100px;
+    width: 100px;
 }
