@@ -134,6 +134,7 @@ a:hover {
     padding: 0.5em 0;
 }
 
+#header-img.default-header,
 #header-img-a {
     background: transparent url(%%uoftsnoo%%) no-repeat center center / contain;
     display: inline-block;
