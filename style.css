@@ -61,7 +61,7 @@ a:hover {
 /* HEADER =========================================================== */
 
 #header {
-    background: #013a6f;
+    background: #00285d;
     border: none;
     color: #fff;
 }
@@ -71,7 +71,7 @@ a:hover {
 }
 
 #sr-header-area {
-    background: #012c54;
+    background: #001c43;
     border: none;
     font-size: 0.6rem;
     height: auto;
@@ -134,12 +134,18 @@ a:hover {
     padding: 0.5em 0;
 }
 
-#header-img.default-header {
+#header-img.default-header,
+#header-img-a {
     background: transparent url(%%uoftsnoo%%) no-repeat center center / contain;
+    display: inline-block;
     height: 4em;
     margin: 0.5em;
     vertical-align: middle;
     width: 4em;
+}
+
+#header-img {
+    display: none;
 }
 
 .pagename {
@@ -272,7 +278,7 @@ a:hover {
 
 .titlebox::before,
 .sidecontentbox .title {
-    background: #013a6f;
+    background: #00285d;
     display: block;
     padding: 0.5rem;
 }
