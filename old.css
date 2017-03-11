@@ -1,0 +1,47 @@
+#header-bottom-left {background: #062958}
+
+.pagename a {
+    color:white
+}
+
+.arrow.upmod { background-image: url(%%upvote%%); background-position: 0px 0px; height: 14px; width: 14px; }
+.arrow.downmod { background-image: url(%%downvote%%); background-position: 0px 0px; height: 14px; width: 14px; }
+
+.users-online .word { display: none; }
+.users-online .number:after { content: ' students currently procrastinating'; }
+
+.subscribers .word { display: none; }  
+.subscribers .number::after { content: " people who literally live in Robarts"; }
+
+/*Colorful User Flairs*/
+.flair{max-width:none; font-weight: 900;}
+.flair-green{ color:green}
+.flair-red{ color:red}
+.flair-orange{ color:orange}
+.flair-yellow{ color: yellow}
+.flair-purple{ color:purple }
+.flair-navy{ color:navy}
+.flair-black{ color:black}
+.flair-pink{ color:pink}
+.flair-cyan{ color:cyan}
+.flair-brown{ color:brown}
+.flair-blue{ color:blue}
+.flair-utsu{ color: black; background-color: "#00b7eb"}
+
+
+body { 
+background-image:url(%%56ab7dc93ea1b7b28fd5bd729366351b-GREY-LIGHTER%%);
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center;
+}
+
+div.bottom {display: none}
+
+
+/* RES Custom Easter Egg */
+.res #baconBit {
+    background: url(%%UofT-Logo-Dark%%);
+    height: 100px;
+    width:  100px;
+}
