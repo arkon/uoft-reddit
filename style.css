@@ -61,7 +61,7 @@ a:hover {
 /* HEADER =========================================================== */
 
 #header {
-    background: #00285d;
+    background: #00204E;
     border: none;
     color: #fff;
 }
@@ -71,7 +71,7 @@ a:hover {
 }
 
 #sr-header-area {
-    background: #001c43;
+    background: #00204E;
     border: none;
     font-size: 0.6rem;
     height: auto;
@@ -278,7 +278,7 @@ a:hover {
 
 .titlebox::before,
 .sidecontentbox .title {
-    background: #00285d;
+    background: #00204E;
     display: block;
     padding: 0.5rem;
 }
@@ -399,6 +399,14 @@ button:active,
     color: #5f7fa2;
 }
 
+.thing .entry.dislikes {
+    opacity: 0.75;
+}
+
+.thing:hover .entry.dislikes {
+    opacity: 1;
+}
+
 .link {
     margin-bottom: 0;
     padding: 0.5em 0;
@@ -436,7 +444,7 @@ button:active,
 
 .stickied {
     background: #d9f0d1;
-    border: 1px solid #f2bd52;
+    border: 1px solid #38a7c0;
     border-radius: 4px;
     margin-bottom: 1rem;
 }
@@ -463,12 +471,20 @@ button:active,
     border-radius: 4px;
 }
 
+.link .score.likes {
+    color: #38a7c0;
+}
+
+.link .score.dislikes {
+    color: #ccc;
+}
+
 .arrow {
     background-image: url(%%arrows%%) !important;
     background-size: cover;
 }
 
-.arrow+.arrow {
+.arrow + .arrow {
     margin-top: 0.5em;
 }
 
@@ -512,9 +528,9 @@ button:active,
 }
 
 html[lang="hh"] .listing-page .thing.linkflair-humour,
-html[lang="hf"] .listing-page .thing.linkflair-freespeech ,
+html[lang="hp"] .listing-page .thing.linkflair-politics,
 html[lang="ad"] .listing-page .thing.linkflair-admissions,
-html[lang="hu"] .listing-page .thing.linkflair-utsu,
+html[lang="su"] .listing-page .thing.linkflair-utsu,
 html[lang="ho"] .listing-page .thing.linkflair-other,
 html[lang="hd"] .listing-page .thing.linkflair-discussion,
 html[lang="ac"] .listing-page .thing.linkflair-academics,
@@ -598,6 +614,18 @@ html[lang="hj"] .listing-page .thing.linkflair-jobs {
     color: #fff;
 }
 
+.flair-utsu {
+    background: #03AEE6;
+    border-color: #03AEE6;
+    color: #000;
+}
+
+.flair-verified {
+    background: #03AEE6;
+    border-color: #03AEE6;
+    color: #000;
+}
+
 .linkflair-other .linkflairlabel {
     background: #33ffec;
     border-color: #33ffec;
@@ -617,9 +645,9 @@ html[lang="hj"] .listing-page .thing.linkflair-jobs {
 }
 
 .linkflair-courses .linkflairlabel {
-    background: #c6edc3;
-    border-color: #c6edc3;
-    color: #000;
+    background: #2980b9;
+    border-color: #2980b9;
+    color: #fff;
 }
 
 .linkflair-jobs .linkflairlabel {
@@ -631,7 +659,6 @@ html[lang="hj"] .listing-page .thing.linkflair-jobs {
 .stickied .midcol {
     visibility: hidden;
 }
-
 
 /* SUBMIT =========================================================== */
 
